@@ -1,0 +1,22 @@
+# Development Process
+
+Where a `reaction` CLI exists:
+
+## Getting Started
+
+`reaction create-project api` (later on `create-project storefront` and `create-project admin` will exist)
+
+Copies the files in this repo and `git init`s it (this will also be the repo they will use for deployment)
+
+`reaction develop`
+
+1. Launches the mongo docker
+2. Runs `npm run start:dev` in watch mode
+
+`reaction create-plugin api my-plugin`
+
+1. Places templated plugin in `custom-packages` directory and adds it to `plugins.json`
+
+`reaction publish`
+
+1. Publishes packages in `custom-packages` directory to npm (or github) via Lerna

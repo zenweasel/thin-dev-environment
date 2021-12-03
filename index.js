@@ -13,11 +13,8 @@ const api = new ReactionAPICore({
  */
 async function runApp() {
   const plugins = await importPluginsJSONFile("./plugins.json");
-  const customPlugins = await importPluginsJSONFile("./customPlugins.json");
 
   await api.registerPlugins(plugins);
-  await api.registerPlugins(customPlugins);
-
   await api.start();
 }
 

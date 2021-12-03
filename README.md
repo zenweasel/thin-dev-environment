@@ -19,11 +19,11 @@ Copies the files in this repo and `git init`s it (this will also be the repo the
 
 `reaction publish`
 
-1. Publishes packages in `custom-packages` directory to npm (or github) via Lerna
+1. Publish packages in `custom-packages` directory to npm (or github) via Lerna
 
 `reaction docker build`
 
-1. Changes links in `plugins.json` to point to npm packages, not local
+1. Change links in `plugins.json` to point to npm packages, not local
 2. Builds docker file
 
 

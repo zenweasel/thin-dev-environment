@@ -104,7 +104,7 @@
     "start:dev": "npm run check-node-version && NODE_ENV=development NODE_OPTIONS='--experimental-modules --experimental-json-modules' nodemon ./index.js",
     "inspect": "NODE_ENV=development node --experimental-modules --experimental-json-modules --inspect ./src/index.js",
     "inspect-brk": "NODE_ENV=development node --experimental-modules --experimental-json-modules --inspect-brk ./src/index.js",
-    "check-node-version": "node ./checkNodeVersion.cjs",
+    "check-node-version": "node ./utils/checkNodeVersion.cjs",
     "npm-check": "npm-check -u"
   },
   "prettier": {
